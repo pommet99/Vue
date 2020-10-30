@@ -5,8 +5,9 @@
             <p class="text-white text-base">{{classe.description}}</p>
         </div>
         <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2">{{classe.difficulty}}</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2">{{classe.length}}</span>
+          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2">{{classe.difficulty}}</span>
+          <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2">{{classe.length}}</span>
+          <classes-button text="Sélectionner" @click="classeDone" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2" ></classes-button>
         </div>
 
   </div>
@@ -29,6 +30,12 @@ export default {
             return "bg-red-500"
         }
           return "bg-grey-500"
+      },
+    },
+    methods:{
+      classeDone(){
+        this.$emit('classes-done', this.classe)
+        this.isDone
       }
     }
 }
