@@ -1,0 +1,40 @@
+{
+  "name": "Cours",
+  "classes": [
+    {
+      "name": "Les Bases du Web",
+      "description": "Un cours simple vous montrant les bases du développement Web.",
+      "language": "HTML/CSS",
+      "difficulty": "Facile",
+      "length": "10 heures"
+    },
+    {
+      "name": "Le Front-End",
+      "description" : "Initiation au Web Design.",
+      "language": "JavaScript",
+      "difficulty": "Facile",
+      "length": "15 Heures"
+    },
+    {
+      "name": "Le Back-End",
+      "description": "Initiation au back-end avec la connection à une base de donnée.",
+      "language": "PHP/MySQL",
+      "difficulty": "Moyen",
+      "length": "20 Heures"     
+    },
+    {
+      "name": "L'Animation",
+      "description" : "Initiation à l'UX/UI avec le framework VueJS.",
+      "language": "VueJS",
+      "difficulty": "Moyen",
+      "length": "20 Heures"
+    },
+    {
+      "name": "Gestion de Bases de Données",
+      "description" : "Cours plus avancé en gestion de BDD avec le Framework Laravel.",
+      "language": "Laravel",
+      "difficulty": "Intermédiaire", 
+      "length": "25 Heures"
+    }
+  ]
+}
